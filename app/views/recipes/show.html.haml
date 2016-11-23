@@ -1,0 +1,33 @@
+.main_content
+	#recipe_top
+		.col-md-4
+			= image_tag @recipe.image.url(:medium), class: "recipe_image"
+		.col-md-8
+			#recipe_info
+				%h1= @recipe.title
+				%p.description= @recipe.description
+				%p
+					Создано:
+					= @recipe.user.email
+
+	.row
+		.col-md-6
+			#ingredients
+				%h2 Ингридиенты
+				%ul
+					- @recipe.ingredients.each do |ingredient|
+						%li= ingredient.name
+
+		.col-md-6
+			#directions
+				%h2 Порядок приготовления
+				%ul
+					- @recipe.directions.each do |direction|
+						%li= direction.step
+
+	.row
+		.col-md-12
+			= link_to "Назад", root_path, class: "btn btn-default"
+			- if user_signed_in?
+				= link_to "Редактировать", edit_recipe_path, class: "btn btn-default"
+				= link_to "Удалить", recipe_path, method: :delete, data: {confirm: "Вы хотите удалить рецепт?"}, class: "btn btn-default"
