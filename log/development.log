@@ -14712,3 +14712,620 @@ Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2016-11-19 17:08:54 +02
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-11-19 17:08:54 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-23 22:27:26 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RecipesController#index as HTML
+  [1m[35mRecipe Load (0.6ms)[0m  SELECT "recipes".* FROM "recipes"   ORDER BY created_at DESC
+  Rendered recipes/index.html.haml within layouts/application (39.8ms)
+Completed 200 OK in 647ms (Views: 559.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2016-11-23 22:27:27 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-11-23 22:27:27 +0200
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2016-11-23 22:27:27 +0200
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2016-11-23 22:27:27 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-11-23 22:27:27 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-11-23 22:27:27 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-11-23 22:27:27 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-11-23 22:27:27 +0200
+
+
+Started GET "/recipes/1" for 127.0.0.1 at 2016-11-23 22:27:31 +0200
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (12.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mIngredient Load (7.3ms)[0m  [1mSELECT "ingredients".* FROM "ingredients"  WHERE "ingredients"."recipe_id" = ?[0m  [["recipe_id", 1]]
+  [1m[35mDirection Load (0.4ms)[0m  SELECT "directions".* FROM "directions"  WHERE "directions"."recipe_id" = ?  [["recipe_id", 1]]
+  Rendered recipes/show.html.haml within layouts/application (212.2ms)
+Completed 200 OK in 304ms (Views: 278.6ms | ActiveRecord: 21.6ms)
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2016-11-23 22:27:31 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-11-23 22:27:31 +0200
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2016-11-23 22:27:31 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-11-23 22:27:31 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-11-23 22:27:31 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-11-23 22:27:31 +0200
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2016-11-23 22:27:31 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-11-23 22:27:31 +0200
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-11-23 22:27:50 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (338.5ms)
+Completed 200 OK in 452ms (Views: 448.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-11-23 22:27:51 +0200
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2016-11-23 22:27:51 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-11-23 22:27:51 +0200
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2016-11-23 22:27:51 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-11-23 22:27:51 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-11-23 22:27:51 +0200
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2016-11-23 22:27:51 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-11-23 22:27:51 +0200
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-11-23 22:27:59 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WYRagHR1++D6u+QtU8dmQSX+qMntRD+cFZgoQjSpTnI=", "user"=>{"email"=>"yurka@yandex.ru", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Войти"}
+  [1m[36mUser Load (19.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'yurka@yandex.ru'  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1[0m  [["current_sign_in_at", "2016-11-23 20:27:59.613109"], ["last_sign_in_at", "2016-11-19 15:08:19.326900"], ["sign_in_count", 6], ["updated_at", "2016-11-23 20:27:59.614840"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 284ms (ActiveRecord: 21.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-23 22:27:59 +0200
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (0.3ms)[0m  [1mSELECT "recipes".* FROM "recipes"   ORDER BY created_at DESC[0m
+  Rendered recipes/index.html.haml within layouts/application (12.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 110ms (Views: 108.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2016-11-23 22:27:59 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-11-23 22:27:59 +0200
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2016-11-23 22:27:59 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-11-23 22:27:59 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-11-23 22:27:59 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-11-23 22:27:59 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-11-23 22:27:59 +0200
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2016-11-23 22:27:59 +0200
+
+
+Started GET "/recipes/1" for 127.0.0.1 at 2016-11-23 22:28:02 +0200
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mIngredient Load (0.1ms)[0m  [1mSELECT "ingredients".* FROM "ingredients"  WHERE "ingredients"."recipe_id" = ?[0m  [["recipe_id", 1]]
+  [1m[35mDirection Load (0.1ms)[0m  SELECT "directions".* FROM "directions"  WHERE "directions"."recipe_id" = ?  [["recipe_id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered recipes/show.html.haml within layouts/application (7.9ms)
+Completed 200 OK in 189ms (Views: 186.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-11-23 22:28:02 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-11-23 22:28:02 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-11-23 22:28:02 +0200
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2016-11-23 22:28:02 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-11-23 22:28:02 +0200
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2016-11-23 22:28:02 +0200
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2016-11-23 22:28:02 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-11-23 22:28:02 +0200
+
+
+Started GET "/recipes/1/edit" for 127.0.0.1 at 2016-11-23 22:28:06 +0200
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRecipe Load (0.1ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mIngredient Load (0.1ms)[0m  SELECT "ingredients".* FROM "ingredients"  WHERE "ingredients"."recipe_id" = ?  [["recipe_id", 1]]
+  Rendered recipes/_ingredient_fields.html.haml (13.0ms)
+  [1m[36mDirection Load (0.1ms)[0m  [1mSELECT "directions".* FROM "directions"  WHERE "directions"."recipe_id" = ?[0m  [["recipe_id", 1]]
+  Rendered recipes/_direction_fields.html.haml (9.5ms)
+  Rendered recipes/_form.html.haml (106.8ms)
+  Rendered recipes/edit.html.haml within layouts/application (132.9ms)
+Completed 200 OK in 292ms (Views: 286.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-11-23 22:28:06 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-11-23 22:28:06 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-11-23 22:28:06 +0200
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2016-11-23 22:28:06 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-11-23 22:28:06 +0200
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2016-11-23 22:28:06 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-11-23 22:28:06 +0200
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2016-11-23 22:28:06 +0200
+
+
+Started PATCH "/recipes/1" for 127.0.0.1 at 2016-11-23 22:30:47 +0200
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZFBJlUoLNMyilY3Dd3V8TBjhQ1jjPswXSwQ7pd2QrNM=", "recipe"=>{"title"=>"Мясной хлеб", "description"=>"", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fad2638b4d8 @tempfile=#<Tempfile:/var/folders/6_/r1plkz9j1fl5lfmz9lj1t6b40000gn/T/RackMultipart20161123-46910-1iwhxn>, @original_filename="2_fkrlqQ-Uw.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"recipe[image]\"; filename=\"2_fkrlqQ-Uw.jpg\"\r\nContent-Type: image/jpeg\r\n">, "ingredients_attributes"=>{"1479932922535"=>{"name"=>"Куриная грудка — 1 шт.", "_destroy"=>"false"}, "1479932922541"=>{"name"=>"Твердый сыр — 200 г.", "_destroy"=>"false"}, "1479932922544"=>{"name"=>"Яйца — 2 шт.", "_destroy"=>"false"}, "1479932942984"=>{"name"=>"Манка — 1 ст. ложка", "_destroy"=>"false"}, "1479932942986"=>{"name"=>"Перец душистый — 1 ч. ложка", "_destroy"=>"false"}, "1479932942988"=>{"name"=>"Горчица французская — по вкусу", "_destroy"=>"false"}, "1479932973015"=>{"name"=>"Соль — 1 ч. ложка", "_destroy"=>"false"}, "1479932973018"=>{"name"=>"", "_destroy"=>"false"}, "1479932973021"=>{"name"=>"", "_destroy"=>"false"}}, "directions_attributes"=>{"1479932980756"=>{"step"=>"Грудку порезать на небольшие кусочки и взбить блендером до однородной массы.", "_destroy"=>"false"}, "1479932980758"=>{"step"=>"Сыр натереть на средней терке и добавить в фарш.", "_destroy"=>"false"}, "1479932980762"=>{"step"=>"Добавить манку, душистый перчик, соль, яйца.", "_destroy"=>"false"}, "1479933001742"=>{"step"=>"Хорошо перемешать и выложить на фольгу готовую массу. И, смоченными руками, сформировать хлебушек.", "_destroy"=>"false"}, "1479933001744"=>{"step"=>"Затем завернуть в фольгу и отправить в духовку минут на 20. ", "_destroy"=>"false"}, "1479933001746"=>{"step"=>"Потом открыть фольгу, чтобы хлеб подрумянился.", "_destroy"=>"false"}, "1479933022746"=>{"step"=>"Сверху смазать французской горчицей. ", "_destroy"=>"false"}, "1479933022748"=>{"step"=>"", "_destroy"=>"false"}, "1479933022750"=>{"step"=>"", "_destroy"=>"false"}}}, "commit"=>"Update Recipe", "id"=>"1"}
+  [1m[35mRecipe Load (0.2ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Command :: file -b --mime '/var/folders/6_/r1plkz9j1fl5lfmz9lj1t6b40000gn/T/8cb59fb6b9b5cb91bcd8b24c2cb2551820161123-46910-wwtvnh.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/6_/r1plkz9j1fl5lfmz9lj1t6b40000gn/T/8cb59fb6b9b5cb91bcd8b24c2cb2551820161123-46910-w44417.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/6_/r1plkz9j1fl5lfmz9lj1t6b40000gn/T/8cb59fb6b9b5cb91bcd8b24c2cb2551820161123-46910-w44417.jpg[0]'
+Command :: convert '/var/folders/6_/r1plkz9j1fl5lfmz9lj1t6b40000gn/T/8cb59fb6b9b5cb91bcd8b24c2cb2551820161123-46910-w44417.jpg[0]' -auto-orient -resize "x400" -crop "400x400+96+0" +repage '/var/folders/6_/r1plkz9j1fl5lfmz9lj1t6b40000gn/T/8cb59fb6b9b5cb91bcd8b24c2cb2551820161123-46910-w4441720161123-46910-1ihw139'
+Command :: file -b --mime '/var/folders/6_/r1plkz9j1fl5lfmz9lj1t6b40000gn/T/8cb59fb6b9b5cb91bcd8b24c2cb2551820161123-46910-w4441720161123-46910-1ihw139'
+Command :: file -b --mime '/var/folders/6_/r1plkz9j1fl5lfmz9lj1t6b40000gn/T/8cb59fb6b9b5cb91bcd8b24c2cb2551820161123-46910-10r0h53.jpg'
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35mIngredient Load (0.2ms)[0m  SELECT "ingredients".* FROM "ingredients"  WHERE "ingredients"."recipe_id" = ?  [["recipe_id", 1]]
+  Rendered recipes/_ingredient_fields.html.haml (9.3ms)
+  Rendered recipes/_ingredient_fields.html.haml (6.4ms)
+  Rendered recipes/_ingredient_fields.html.haml (5.1ms)
+  Rendered recipes/_ingredient_fields.html.haml (5.0ms)
+  Rendered recipes/_ingredient_fields.html.haml (5.4ms)
+  Rendered recipes/_ingredient_fields.html.haml (6.7ms)
+  Rendered recipes/_ingredient_fields.html.haml (6.1ms)
+  Rendered recipes/_ingredient_fields.html.haml (7.0ms)
+  [1m[36mDirection Load (0.1ms)[0m  [1mSELECT "directions".* FROM "directions"  WHERE "directions"."recipe_id" = ?[0m  [["recipe_id", 1]]
+  Rendered recipes/_direction_fields.html.haml (10.2ms)
+  Rendered recipes/_direction_fields.html.haml (6.2ms)
+  Rendered recipes/_direction_fields.html.haml (5.2ms)
+  Rendered recipes/_direction_fields.html.haml (5.9ms)
+  Rendered recipes/_direction_fields.html.haml (6.8ms)
+  Rendered recipes/_direction_fields.html.haml (6.3ms)
+  Rendered recipes/_direction_fields.html.haml (5.8ms)
+  Rendered recipes/_direction_fields.html.haml (7.6ms)
+  Rendered recipes/_form.html.haml (192.4ms)
+  Rendered recipes/edit.html.haml within layouts/application (215.1ms)
+Completed 200 OK in 1420ms (Views: 325.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2016-11-23 22:30:48 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-11-23 22:30:48 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-11-23 22:30:48 +0200
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2016-11-23 22:30:48 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-11-23 22:30:48 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-11-23 22:30:48 +0200
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2016-11-23 22:30:48 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-11-23 22:30:48 +0200
+
+
+Started PATCH "/recipes/1" for 127.0.0.1 at 2016-11-23 22:31:20 +0200
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZFBJlUoLNMyilY3Dd3V8TBjhQ1jjPswXSwQ7pd2QrNM=", "recipe"=>{"title"=>"Мясной хлеб", "description"=>"Хлеб из мяса. Заменяет бутерброды ;-)", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fad26704100 @tempfile=#<Tempfile:/var/folders/6_/r1plkz9j1fl5lfmz9lj1t6b40000gn/T/RackMultipart20161123-46910-1q0e7p5>, @original_filename="2_fkrlqQ-Uw.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"recipe[image]\"; filename=\"2_fkrlqQ-Uw.jpg\"\r\nContent-Type: image/jpeg\r\n">, "ingredients_attributes"=>{"0"=>{"name"=>"Куриная грудка — 1 шт.", "_destroy"=>"false"}, "1"=>{"name"=>"Твердый сыр — 200 г.", "_destroy"=>"false"}, "2"=>{"name"=>"Яйца — 2 шт.", "_destroy"=>"false"}, "3"=>{"name"=>"Манка — 1 ст. ложка", "_destroy"=>"false"}, "4"=>{"name"=>"Перец душистый — 1 ч. ложка", "_destroy"=>"false"}, "5"=>{"name"=>"Горчица французская — по вкусу", "_destroy"=>"false"}, "6"=>{"name"=>"Соль — 1 ч. ложка", "_destroy"=>"false"}}, "directions_attributes"=>{"0"=>{"step"=>"Грудку порезать на небольшие кусочки и взбить блендером до однородной массы.", "_destroy"=>"false"}, "1"=>{"step"=>"Сыр натереть на средней терке и добавить в фарш.", "_destroy"=>"false"}, "2"=>{"step"=>"Добавить манку, душистый перчик, соль, яйца.", "_destroy"=>"false"}, "3"=>{"step"=>"Хорошо перемешать и выложить на фольгу готовую массу. И, смоченными руками, сформировать хлебушек.", "_destroy"=>"false"}, "4"=>{"step"=>"Затем завернуть в фольгу и отправить в духовку минут на 20. ", "_destroy"=>"false"}, "5"=>{"step"=>"Потом открыть фольгу, чтобы хлеб подрумянился.", "_destroy"=>"false"}, "6"=>{"step"=>"Сверху смазать французской горчицей. ", "_destroy"=>"false"}}}, "commit"=>"Update Recipe", "id"=>"1"}
+  [1m[35mRecipe Load (0.2ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Command :: file -b --mime '/var/folders/6_/r1plkz9j1fl5lfmz9lj1t6b40000gn/T/8cb59fb6b9b5cb91bcd8b24c2cb2551820161123-46910-s98ltb.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/6_/r1plkz9j1fl5lfmz9lj1t6b40000gn/T/8cb59fb6b9b5cb91bcd8b24c2cb2551820161123-46910-tdlcua.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/6_/r1plkz9j1fl5lfmz9lj1t6b40000gn/T/8cb59fb6b9b5cb91bcd8b24c2cb2551820161123-46910-tdlcua.jpg[0]'
+Command :: convert '/var/folders/6_/r1plkz9j1fl5lfmz9lj1t6b40000gn/T/8cb59fb6b9b5cb91bcd8b24c2cb2551820161123-46910-tdlcua.jpg[0]' -auto-orient -resize "x400" -crop "400x400+96+0" +repage '/var/folders/6_/r1plkz9j1fl5lfmz9lj1t6b40000gn/T/8cb59fb6b9b5cb91bcd8b24c2cb2551820161123-46910-tdlcua20161123-46910-14qrc18'
+Command :: file -b --mime '/var/folders/6_/r1plkz9j1fl5lfmz9lj1t6b40000gn/T/8cb59fb6b9b5cb91bcd8b24c2cb2551820161123-46910-tdlcua20161123-46910-14qrc18'
+Command :: file -b --mime '/var/folders/6_/r1plkz9j1fl5lfmz9lj1t6b40000gn/T/8cb59fb6b9b5cb91bcd8b24c2cb2551820161123-46910-1h3ripr.jpg'
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "recipes" SET "description" = ?, "image_file_name" = ?, "image_file_size" = ?, "image_updated_at" = ?, "title" = ?, "updated_at" = ? WHERE "recipes"."id" = 1[0m  [["description", "Хлеб из мяса. Заменяет бутерброды ;-)"], ["image_file_name", "2_fkrlqQ-Uw.jpg"], ["image_file_size", 35004], ["image_updated_at", "2016-11-23 20:31:20.272501"], ["title", "Мясной хлеб"], ["updated_at", "2016-11-23 20:31:20.808305"]]
+  [1m[35mSQL (9.0ms)[0m  INSERT INTO "ingredients" ("created_at", "name", "recipe_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2016-11-23 20:31:20.810668"], ["name", "Куриная грудка — 1 шт."], ["recipe_id", 1], ["updated_at", "2016-11-23 20:31:20.810668"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "recipe_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2016-11-23 20:31:20.822005"], ["name", "Твердый сыр — 200 г."], ["recipe_id", 1], ["updated_at", "2016-11-23 20:31:20.822005"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "ingredients" ("created_at", "name", "recipe_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2016-11-23 20:31:20.823391"], ["name", "Яйца — 2 шт."], ["recipe_id", 1], ["updated_at", "2016-11-23 20:31:20.823391"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "recipe_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2016-11-23 20:31:20.824602"], ["name", "Манка — 1 ст. ложка"], ["recipe_id", 1], ["updated_at", "2016-11-23 20:31:20.824602"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "ingredients" ("created_at", "name", "recipe_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2016-11-23 20:31:20.825415"], ["name", "Перец душистый — 1 ч. ложка"], ["recipe_id", 1], ["updated_at", "2016-11-23 20:31:20.825415"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "recipe_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2016-11-23 20:31:20.826303"], ["name", "Горчица французская — по вкусу"], ["recipe_id", 1], ["updated_at", "2016-11-23 20:31:20.826303"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "ingredients" ("created_at", "name", "recipe_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2016-11-23 20:31:20.827110"], ["name", "Соль — 1 ч. ложка"], ["recipe_id", 1], ["updated_at", "2016-11-23 20:31:20.827110"]]
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "directions" ("created_at", "recipe_id", "step", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2016-11-23 20:31:20.828445"], ["recipe_id", 1], ["step", "Грудку порезать на небольшие кусочки и взбить блендером до однородной массы."], ["updated_at", "2016-11-23 20:31:20.828445"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "directions" ("created_at", "recipe_id", "step", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2016-11-23 20:31:20.831299"], ["recipe_id", 1], ["step", "Сыр натереть на средней терке и добавить в фарш."], ["updated_at", "2016-11-23 20:31:20.831299"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "directions" ("created_at", "recipe_id", "step", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2016-11-23 20:31:20.832244"], ["recipe_id", 1], ["step", "Добавить манку, душистый перчик, соль, яйца."], ["updated_at", "2016-11-23 20:31:20.832244"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "directions" ("created_at", "recipe_id", "step", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2016-11-23 20:31:20.833388"], ["recipe_id", 1], ["step", "Хорошо перемешать и выложить на фольгу готовую массу. И, смоченными руками, сформировать хлебушек."], ["updated_at", "2016-11-23 20:31:20.833388"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "directions" ("created_at", "recipe_id", "step", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2016-11-23 20:31:20.834130"], ["recipe_id", 1], ["step", "Затем завернуть в фольгу и отправить в духовку минут на 20. "], ["updated_at", "2016-11-23 20:31:20.834130"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "directions" ("created_at", "recipe_id", "step", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2016-11-23 20:31:20.834939"], ["recipe_id", 1], ["step", "Потом открыть фольгу, чтобы хлеб подрумянился."], ["updated_at", "2016-11-23 20:31:20.834939"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "directions" ("created_at", "recipe_id", "step", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2016-11-23 20:31:20.835670"], ["recipe_id", 1], ["step", "Сверху смазать французской горчицей. "], ["updated_at", "2016-11-23 20:31:20.835670"]]
+[paperclip] deleting /Users/Delta/Rails/recipe_box/public/system/recipes/images/000/000/001/original/1351527998.jpg
+[paperclip] deleting /Users/Delta/Rails/recipe_box/public/system/recipes/images/000/000/001/medium/1351527998.jpg
+  [1m[35m (2.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/recipes/1
+Completed 302 Found in 633ms (ActiveRecord: 13.8ms)
+
+
+Started GET "/recipes/1" for 127.0.0.1 at 2016-11-23 22:31:20 +0200
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (1.0ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mIngredient Load (0.2ms)[0m  [1mSELECT "ingredients".* FROM "ingredients"  WHERE "ingredients"."recipe_id" = ?[0m  [["recipe_id", 1]]
+  [1m[35mDirection Load (0.2ms)[0m  SELECT "directions".* FROM "directions"  WHERE "directions"."recipe_id" = ?  [["recipe_id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered recipes/show.html.haml within layouts/application (27.5ms)
+Completed 200 OK in 205ms (Views: 193.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-11-23 22:31:21 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-11-23 22:31:21 +0200
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2016-11-23 22:31:21 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-11-23 22:31:21 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-11-23 22:31:21 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-11-23 22:31:21 +0200
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2016-11-23 22:31:21 +0200
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2016-11-23 22:31:21 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-23 22:31:24 +0200
+Processing by RecipesController#index as HTML
+  [1m[35mRecipe Load (0.3ms)[0m  SELECT "recipes".* FROM "recipes"   ORDER BY created_at DESC
+  Rendered recipes/index.html.haml within layouts/application (17.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 142ms (Views: 140.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2016-11-23 22:31:24 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-11-23 22:31:24 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-11-23 22:31:24 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-11-23 22:31:24 +0200
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2016-11-23 22:31:24 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-11-23 22:31:24 +0200
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2016-11-23 22:31:24 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-11-23 22:31:24 +0200
+
+
+Started GET "/recipes/1" for 127.0.0.1 at 2016-11-23 22:31:28 +0200
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRecipe Load (0.1ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mIngredient Load (0.1ms)[0m  SELECT "ingredients".* FROM "ingredients"  WHERE "ingredients"."recipe_id" = ?  [["recipe_id", 1]]
+  [1m[36mDirection Load (0.1ms)[0m  [1mSELECT "directions".* FROM "directions"  WHERE "directions"."recipe_id" = ?[0m  [["recipe_id", 1]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered recipes/show.html.haml within layouts/application (7.4ms)
+Completed 200 OK in 85ms (Views: 82.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2016-11-23 22:31:28 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-11-23 22:31:28 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-11-23 22:31:28 +0200
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2016-11-23 22:31:28 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-11-23 22:31:28 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-11-23 22:31:28 +0200
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2016-11-23 22:31:28 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-11-23 22:31:28 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-23 22:32:12 +0200
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (0.4ms)[0m  [1mSELECT "recipes".* FROM "recipes"   ORDER BY created_at DESC[0m
+  Rendered recipes/index.html.haml within layouts/application (13.0ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 194ms (Views: 192.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-11-23 22:32:12 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-11-23 22:32:12 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-11-23 22:32:12 +0200
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2016-11-23 22:32:12 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-11-23 22:32:12 +0200
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2016-11-23 22:32:12 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-11-23 22:32:12 +0200
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2016-11-23 22:32:12 +0200
+
+
+Started GET "/recipes/2" for 127.0.0.1 at 2016-11-23 22:32:15 +0200
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mIngredient Load (0.1ms)[0m  [1mSELECT "ingredients".* FROM "ingredients"  WHERE "ingredients"."recipe_id" = ?[0m  [["recipe_id", 2]]
+  [1m[35mDirection Load (0.1ms)[0m  SELECT "directions".* FROM "directions"  WHERE "directions"."recipe_id" = ?  [["recipe_id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered recipes/show.html.haml within layouts/application (6.2ms)
+Completed 200 OK in 125ms (Views: 122.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2016-11-23 22:32:15 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-11-23 22:32:15 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-11-23 22:32:15 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-11-23 22:32:15 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-11-23 22:32:15 +0200
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2016-11-23 22:32:15 +0200
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2016-11-23 22:32:15 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-11-23 22:32:15 +0200
+
+
+Started GET "/recipes/2/edit" for 127.0.0.1 at 2016-11-23 22:32:17 +0200
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRecipe Load (0.2ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mIngredient Load (0.1ms)[0m  SELECT "ingredients".* FROM "ingredients"  WHERE "ingredients"."recipe_id" = ?  [["recipe_id", 2]]
+  Rendered recipes/_ingredient_fields.html.haml (4.8ms)
+  [1m[36mDirection Load (0.1ms)[0m  [1mSELECT "directions".* FROM "directions"  WHERE "directions"."recipe_id" = ?[0m  [["recipe_id", 2]]
+  Rendered recipes/_direction_fields.html.haml (6.1ms)
+  Rendered recipes/_form.html.haml (48.4ms)
+  Rendered recipes/edit.html.haml within layouts/application (63.1ms)
+Completed 200 OK in 169ms (Views: 166.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-11-23 22:32:18 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-11-23 22:32:18 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-11-23 22:32:18 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-11-23 22:32:18 +0200
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2016-11-23 22:32:18 +0200
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2016-11-23 22:32:18 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-11-23 22:32:18 +0200
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2016-11-23 22:32:18 +0200
+
+
+Started PATCH "/recipes/2" for 127.0.0.1 at 2016-11-23 22:34:31 +0200
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZFBJlUoLNMyilY3Dd3V8TBjhQ1jjPswXSwQ7pd2QrNM=", "recipe"=>{"title"=>"Настойка из смородины на водке", "description"=>"К праздничному столу очень кстати придется алкогольный напиток, сделанный своими руками по рецепту, как приготовить настойку из смородины на водке. Он получается ароматным, со сладковатым привкусом. Почти ни один праздник не обходится без алкогольных напитков. Сегодня можно с легкостью купить любой в супермаркете, однако можете ли вы быть уверены в его качестве? Настойка из смородины станет отличным дополнением любого праздничного стола. Готовится она из ягод смородины, сахара и спирта. Кроме смородины можно использовать абсолютно любые ягоды: рябину, малину, клубнику. А количество сахара варьируйте, отталкиваясь от сладости ягодки. Пить настойку лучше в охлажденном виде. ", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fad24b12320 @tempfile=#<Tempfile:/var/folders/6_/r1plkz9j1fl5lfmz9lj1t6b40000gn/T/RackMultipart20161123-46910-1eqilz3>, @original_filename="2_fkrlqQ-Uw.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"recipe[image]\"; filename=\"2_fkrlqQ-Uw.jpg\"\r\nContent-Type: image/jpeg\r\n">, "ingredients_attributes"=>{"1479933163819"=>{"name"=>"Смородина черная — 400 грамм", "_destroy"=>"false"}, "1479933163826"=>{"name"=>"Водка — 0,5 литра", "_destroy"=>"false"}, "1479933163829"=>{"name"=>"Сахарный песок — 250 грамм", "_destroy"=>"false"}, "1479933163833"=>{"name"=>"Вода — 200 миллилитров", "_destroy"=>"false"}, "1479933163839"=>{"name"=>"", "_destroy"=>"false"}, "1479933163842"=>{"name"=>"", "_destroy"=>"false"}}, "directions_attributes"=>{"1479933199054"=>{"step"=>"Первым делом занимаемся ягодами: откидываем их на сито, перебираем, удаляя поврежденные от спелых, а после этого хорошенько промываем под проточной водой. Обязательно удаляем все веточки.", "_destroy"=>"false"}, "1479933199056"=>{"step"=>"В ёмкость (лучше в кастрюльку) выливаем воду и выкладываем сахар. Ставим их на огонь и доводим до кипения.", "_destroy"=>"false"}, "1479933199058"=>{"step"=>" Как только смесь закипит, добавим к ней ягоды. Перемешайте и снова доведите до кипения. Держим 3 минуты, а затем убираем с огня.", "_destroy"=>"false"}, "1479933199065"=>{"step"=>"Ягоды мнём при помощи толкучки. Оставляем всё это остывать.", "_destroy"=>"false"}, "1479933199068"=>{"step"=>"Остывшую смородиновую массу смешиваем с водкой. После переливаем всё в ёмкость (банку), закрываем крышкой и оставляем в тепле (в тёмном месте) настаиваться на протяжении дней 20. Каждые два-три дня берите ёмкость с настойкой и встряхивайте. Это нужно для того, чтобы все ингредиенты хорошо смешивались друг с другом, а не оседали на дне.", "_destroy"=>"false"}, "1479933199072"=>{"step"=>"По прошествии времени процедите настойку через марлю, разлейте по стерильным ёмкостям (бутылочкам) и закройте пробками. Храните в холодном тёмном месте.", "_destroy"=>"false"}}}, "commit"=>"Update Recipe", "id"=>"2"}
+  [1m[35mRecipe Load (0.1ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Command :: file -b --mime '/var/folders/6_/r1plkz9j1fl5lfmz9lj1t6b40000gn/T/8cb59fb6b9b5cb91bcd8b24c2cb2551820161123-46910-13qwgzu.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/6_/r1plkz9j1fl5lfmz9lj1t6b40000gn/T/8cb59fb6b9b5cb91bcd8b24c2cb2551820161123-46910-1kqyqcq.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/6_/r1plkz9j1fl5lfmz9lj1t6b40000gn/T/8cb59fb6b9b5cb91bcd8b24c2cb2551820161123-46910-1kqyqcq.jpg[0]'
+Command :: convert '/var/folders/6_/r1plkz9j1fl5lfmz9lj1t6b40000gn/T/8cb59fb6b9b5cb91bcd8b24c2cb2551820161123-46910-1kqyqcq.jpg[0]' -auto-orient -resize "x400" -crop "400x400+95+0" +repage '/var/folders/6_/r1plkz9j1fl5lfmz9lj1t6b40000gn/T/8cb59fb6b9b5cb91bcd8b24c2cb2551820161123-46910-1kqyqcq20161123-46910-ixcow5'
+Command :: file -b --mime '/var/folders/6_/r1plkz9j1fl5lfmz9lj1t6b40000gn/T/8cb59fb6b9b5cb91bcd8b24c2cb2551820161123-46910-1kqyqcq20161123-46910-ixcow5'
+Command :: file -b --mime '/var/folders/6_/r1plkz9j1fl5lfmz9lj1t6b40000gn/T/8cb59fb6b9b5cb91bcd8b24c2cb2551820161123-46910-1s4fqmk.jpg'
+  [1m[36mSQL (20.3ms)[0m  [1mUPDATE "recipes" SET "description" = ?, "image_file_name" = ?, "image_file_size" = ?, "image_updated_at" = ?, "title" = ?, "updated_at" = ? WHERE "recipes"."id" = 2[0m  [["description", "К праздничному столу очень кстати придется алкогольный напиток, сделанный своими руками по рецепту, как приготовить настойку из смородины на водке. Он получается ароматным, со сладковатым привкусом. Почти ни один праздник не обходится без алкогольных напитков. Сегодня можно с легкостью купить любой в супермаркете, однако можете ли вы быть уверены в его качестве? Настойка из смородины станет отличным дополнением любого праздничного стола. Готовится она из ягод смородины, сахара и спирта. Кроме смородины можно использовать абсолютно любые ягоды: рябину, малину, клубнику. А количество сахара варьируйте, отталкиваясь от сладости ягодки. Пить настойку лучше в охлажденном виде. "], ["image_file_name", "2_fkrlqQ-Uw.jpg"], ["image_file_size", 64355], ["image_updated_at", "2016-11-23 20:34:31.301282"], ["title", "Настойка из смородины на водке"], ["updated_at", "2016-11-23 20:34:31.925801"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "ingredients" ("created_at", "name", "recipe_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2016-11-23 20:34:31.948966"], ["name", "Смородина черная — 400 грамм"], ["recipe_id", 2], ["updated_at", "2016-11-23 20:34:31.948966"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "recipe_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2016-11-23 20:34:31.950852"], ["name", "Водка — 0,5 литра"], ["recipe_id", 2], ["updated_at", "2016-11-23 20:34:31.950852"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "ingredients" ("created_at", "name", "recipe_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2016-11-23 20:34:31.952081"], ["name", "Сахарный песок — 250 грамм"], ["recipe_id", 2], ["updated_at", "2016-11-23 20:34:31.952081"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "recipe_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2016-11-23 20:34:31.953291"], ["name", "Вода — 200 миллилитров"], ["recipe_id", 2], ["updated_at", "2016-11-23 20:34:31.953291"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "directions" ("created_at", "recipe_id", "step", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2016-11-23 20:34:31.954860"], ["recipe_id", 2], ["step", "Первым делом занимаемся ягодами: откидываем их на сито, перебираем, удаляя поврежденные от спелых, а после этого хорошенько промываем под проточной водой. Обязательно удаляем все веточки."], ["updated_at", "2016-11-23 20:34:31.954860"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "directions" ("created_at", "recipe_id", "step", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2016-11-23 20:34:31.956361"], ["recipe_id", 2], ["step", "В ёмкость (лучше в кастрюльку) выливаем воду и выкладываем сахар. Ставим их на огонь и доводим до кипения."], ["updated_at", "2016-11-23 20:34:31.956361"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "directions" ("created_at", "recipe_id", "step", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2016-11-23 20:34:31.957352"], ["recipe_id", 2], ["step", " Как только смесь закипит, добавим к ней ягоды. Перемешайте и снова доведите до кипения. Держим 3 минуты, а затем убираем с огня."], ["updated_at", "2016-11-23 20:34:31.957352"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "directions" ("created_at", "recipe_id", "step", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2016-11-23 20:34:31.958370"], ["recipe_id", 2], ["step", "Ягоды мнём при помощи толкучки. Оставляем всё это остывать."], ["updated_at", "2016-11-23 20:34:31.958370"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "directions" ("created_at", "recipe_id", "step", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2016-11-23 20:34:31.959411"], ["recipe_id", 2], ["step", "Остывшую смородиновую массу смешиваем с водкой. После переливаем всё в ёмкость (банку), закрываем крышкой и оставляем в тепле (в тёмном месте) настаиваться на протяжении дней 20. Каждые два-три дня берите ёмкость с настойкой и встряхивайте. Это нужно для того, чтобы все ингредиенты хорошо смешивались друг с другом, а не оседали на дне."], ["updated_at", "2016-11-23 20:34:31.959411"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "directions" ("created_at", "recipe_id", "step", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2016-11-23 20:34:31.960541"], ["recipe_id", 2], ["step", "По прошествии времени процедите настойку через марлю, разлейте по стерильным ёмкостям (бутылочкам) и закройте пробками. Храните в холодном тёмном месте."], ["updated_at", "2016-11-23 20:34:31.960541"]]
+[paperclip] deleting /Users/Delta/Rails/recipe_box/public/system/recipes/images/000/000/002/original/200.jpg
+[paperclip] deleting /Users/Delta/Rails/recipe_box/public/system/recipes/images/000/000/002/medium/200.jpg
+  [1m[35m (30.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/recipes/2
+Completed 302 Found in 761ms (ActiveRecord: 52.1ms)
+
+
+Started GET "/recipes/2" for 127.0.0.1 at 2016-11-23 22:34:32 +0200
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mIngredient Load (0.1ms)[0m  [1mSELECT "ingredients".* FROM "ingredients"  WHERE "ingredients"."recipe_id" = ?[0m  [["recipe_id", 2]]
+  [1m[35mDirection Load (0.4ms)[0m  SELECT "directions".* FROM "directions"  WHERE "directions"."recipe_id" = ?  [["recipe_id", 2]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered recipes/show.html.haml within layouts/application (9.2ms)
+Completed 200 OK in 96ms (Views: 92.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2016-11-23 22:34:32 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-11-23 22:34:32 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-11-23 22:34:32 +0200
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2016-11-23 22:34:32 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-11-23 22:34:32 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-11-23 22:34:32 +0200
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2016-11-23 22:34:32 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-11-23 22:34:32 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-23 22:34:39 +0200
+Processing by RecipesController#index as HTML
+  [1m[35mRecipe Load (0.3ms)[0m  SELECT "recipes".* FROM "recipes"   ORDER BY created_at DESC
+  Rendered recipes/index.html.haml within layouts/application (11.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 97ms (Views: 95.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2016-11-23 22:34:39 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-11-23 22:34:39 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-11-23 22:34:39 +0200
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2016-11-23 22:34:39 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-11-23 22:34:39 +0200
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2016-11-23 22:34:39 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-11-23 22:34:39 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-11-23 22:34:39 +0200
