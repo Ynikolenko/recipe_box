@@ -16744,3 +16744,735 @@ Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2017-02-17 21:30:52 +02
 
 
 Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-17 21:30:52 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-22 20:31:14 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RecipesController#index as HTML
+  [1m[35mRecipe Load (0.5ms)[0m  SELECT "recipes".* FROM "recipes"   ORDER BY created_at DESC
+  Rendered recipes/index.html.haml within layouts/application (47.4ms)
+Completed 200 OK in 732ms (Views: 609.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-22 20:31:15 +0200
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (0.3ms)[0m  [1mSELECT "recipes".* FROM "recipes"   ORDER BY created_at DESC[0m
+  Rendered recipes/index.html.haml within layouts/application (11.7ms)
+Completed 200 OK in 89ms (Views: 88.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2017-02-22 20:31:15 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-22 20:31:15 +0200
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2017-02-22 20:31:15 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-22 20:31:15 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-22 20:31:15 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-22 20:31:15 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-22 20:31:15 +0200
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2017-02-22 20:31:15 +0200
+
+
+Started GET "/recipes/5" for 127.0.0.1 at 2017-02-22 20:31:19 +0200
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mRecipe Load (0.3ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mUser Load (13.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mIngredient Load (7.1ms)[0m  SELECT "ingredients".* FROM "ingredients"  WHERE "ingredients"."recipe_id" = ?  [["recipe_id", 5]]
+  [1m[36mDirection Load (14.7ms)[0m  [1mSELECT "directions".* FROM "directions"  WHERE "directions"."recipe_id" = ?[0m  [["recipe_id", 5]]
+  Rendered recipes/show.html.haml within layouts/application (212.1ms)
+Completed 200 OK in 398ms (Views: 329.3ms | ActiveRecord: 37.3ms)
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2017-02-22 20:31:19 +0200
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2017-02-22 20:31:19 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-22 20:31:19 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-22 20:31:19 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-22 20:31:19 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-22 20:31:19 +0200
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2017-02-22 20:31:20 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-22 20:31:20 +0200
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2017-02-22 20:31:49 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-22 20:31:49 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-22 20:31:49 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-22 20:31:49 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-22 20:31:49 +0200
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2017-02-22 20:31:49 +0200
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2017-02-22 20:31:49 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-22 20:31:49 +0200
+
+
+Started GET "/recipes/1" for 127.0.0.1 at 2017-02-22 20:31:54 +0200
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRecipe Load (0.3ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mIngredient Load (0.3ms)[0m  SELECT "ingredients".* FROM "ingredients"  WHERE "ingredients"."recipe_id" = ?  [["recipe_id", 1]]
+  [1m[36mDirection Load (0.1ms)[0m  [1mSELECT "directions".* FROM "directions"  WHERE "directions"."recipe_id" = ?[0m  [["recipe_id", 1]]
+  Rendered recipes/show.html.haml within layouts/application (12.4ms)
+Completed 200 OK in 152ms (Views: 135.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-22 20:31:55 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-22 20:31:55 +0200
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2017-02-22 20:31:55 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-22 20:31:55 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-22 20:31:55 +0200
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2017-02-22 20:31:55 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-22 20:31:55 +0200
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2017-02-22 20:31:55 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-22 20:32:01 +0200
+Processing by RecipesController#index as HTML
+  [1m[35mRecipe Load (0.4ms)[0m  SELECT "recipes".* FROM "recipes"   ORDER BY created_at DESC
+  Rendered recipes/index.html.haml within layouts/application (41.6ms)
+Completed 200 OK in 188ms (Views: 186.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2017-02-22 20:32:01 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-22 20:32:01 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-22 20:32:01 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-22 20:32:01 +0200
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2017-02-22 20:32:01 +0200
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2017-02-22 20:32:01 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-22 20:32:01 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-22 20:32:01 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-13 04:10:47 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RecipesController#index as HTML
+  [1m[35mRecipe Load (11.4ms)[0m  SELECT "recipes".* FROM "recipes"   ORDER BY created_at DESC
+  Rendered recipes/index.html.haml within layouts/application (89.9ms)
+Completed 200 OK in 931ms (Views: 743.3ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-13 04:10:48 +0200
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (0.3ms)[0m  [1mSELECT "recipes".* FROM "recipes"   ORDER BY created_at DESC[0m
+  Rendered recipes/index.html.haml within layouts/application (11.4ms)
+Completed 200 OK in 83ms (Views: 81.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-03-13 04:10:48 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-03-13 04:10:48 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-03-13 04:10:48 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-03-13 04:10:48 +0200
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2017-03-13 04:10:48 +0200
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2017-03-13 04:10:48 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-03-13 04:10:48 +0200
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2017-03-13 04:10:48 +0200
+
+
+Started GET "/recipes/3" for 127.0.0.1 at 2017-03-13 04:11:51 +0200
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mRecipe Load (0.2ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (13.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mIngredient Load (7.2ms)[0m  SELECT "ingredients".* FROM "ingredients"  WHERE "ingredients"."recipe_id" = ?  [["recipe_id", 3]]
+  [1m[36mDirection Load (1.1ms)[0m  [1mSELECT "directions".* FROM "directions"  WHERE "directions"."recipe_id" = ?[0m  [["recipe_id", 3]]
+  Rendered recipes/show.html.haml within layouts/application (139.3ms)
+Completed 200 OK in 245ms (Views: 218.8ms | ActiveRecord: 23.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-03-13 04:11:52 +0200
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2017-03-13 04:11:52 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-11 22:48:13 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RecipesController#index as HTML
+  [1m[35mRecipe Load (0.7ms)[0m  SELECT "recipes".* FROM "recipes"   ORDER BY created_at DESC
+  Rendered recipes/index.html.haml within layouts/application (27.0ms)
+Completed 200 OK in 543ms (Views: 487.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2017-04-11 22:48:14 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-04-11 22:48:14 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-04-11 22:48:14 +0300
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2017-04-11 22:48:14 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-04-11 22:48:14 +0300
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2017-04-11 22:48:14 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-04-11 22:48:14 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-04-11 22:48:14 +0300
+
+
+Started GET "/recipes/5" for 127.0.0.1 at 2017-04-11 22:48:32 +0300
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mUser Load (14.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mIngredient Load (15.8ms)[0m  [1mSELECT "ingredients".* FROM "ingredients"  WHERE "ingredients"."recipe_id" = ?[0m  [["recipe_id", 5]]
+  [1m[35mDirection Load (1.2ms)[0m  SELECT "directions".* FROM "directions"  WHERE "directions"."recipe_id" = ?  [["recipe_id", 5]]
+  Rendered recipes/show.html.haml within layouts/application (150.7ms)
+Completed 200 OK in 266ms (Views: 215.4ms | ActiveRecord: 33.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-04-11 22:48:32 +0300
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2017-04-11 22:48:32 +0300
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-11 22:48:36 +0300
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (0.3ms)[0m  [1mSELECT "recipes".* FROM "recipes"   ORDER BY created_at DESC[0m
+  Rendered recipes/index.html.haml within layouts/application (15.3ms)
+Completed 200 OK in 152ms (Views: 150.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2017-04-11 22:48:36 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-04-11 22:48:36 +0300
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2017-04-11 22:48:36 +0300
+
+
+Started GET "/recipes/4" for 127.0.0.1 at 2017-04-11 22:48:37 +0300
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mRecipe Load (0.1ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mIngredient Load (0.2ms)[0m  SELECT "ingredients".* FROM "ingredients"  WHERE "ingredients"."recipe_id" = ?  [["recipe_id", 4]]
+  [1m[36mDirection Load (0.5ms)[0m  [1mSELECT "directions".* FROM "directions"  WHERE "directions"."recipe_id" = ?[0m  [["recipe_id", 4]]
+  Rendered recipes/show.html.haml within layouts/application (11.9ms)
+Completed 200 OK in 121ms (Views: 118.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-04-11 22:48:37 +0300
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2017-04-11 22:48:37 +0300
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-08 23:43:45 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RecipesController#index as HTML
+  [1m[35mRecipe Load (0.6ms)[0m  SELECT "recipes".* FROM "recipes"   ORDER BY created_at DESC
+  Rendered recipes/index.html.haml within layouts/application (27.0ms)
+Completed 200 OK in 799ms (Views: 742.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-08 23:43:46 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-08 23:43:46 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-08 23:43:46 +0300
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2017-06-08 23:43:46 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-08 23:43:46 +0300
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2017-06-08 23:43:46 +0300
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2017-06-08 23:43:46 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-08 23:43:46 +0300
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-06-08 23:44:09 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (279.1ms)
+Completed 200 OK in 456ms (Views: 416.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2017-06-08 23:44:10 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-08 23:44:10 +0300
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2017-06-08 23:44:10 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-08 23:44:10 +0300
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2017-06-08 23:44:18 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jpGFw4UxIM4ohoWuNbpjhhuywIZk7H/vOT1mJHvxuSo=", "user"=>{"email"=>"yurka@yandex.ru", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Войти"}
+  [1m[36mUser Load (26.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'yurka@yandex.ru'  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 401 Unauthorized in 244ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jpGFw4UxIM4ohoWuNbpjhhuywIZk7H/vOT1mJHvxuSo=", "user"=>{"email"=>"yurka@yandex.ru", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Войти"}
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 189ms (Views: 90.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2017-06-08 23:44:19 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-08 23:44:19 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-08 23:44:19 +0300
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2017-06-08 23:44:19 +0300
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2017-06-08 23:44:26 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jpGFw4UxIM4ohoWuNbpjhhuywIZk7H/vOT1mJHvxuSo=", "user"=>{"email"=>"yurka@yandex.ru", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Войти"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'yurka@yandex.ru'  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["current_sign_in_at", "2017-06-08 20:44:26.521397"], ["last_sign_in_at", "2017-02-17 19:15:09.891746"], ["sign_in_count", 8], ["updated_at", "2017-06-08 20:44:26.522902"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 184ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-08 23:44:26 +0300
+Processing by RecipesController#index as HTML
+  [1m[35mRecipe Load (0.3ms)[0m  SELECT "recipes".* FROM "recipes"   ORDER BY created_at DESC
+  Rendered recipes/index.html.haml within layouts/application (11.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 117ms (Views: 115.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2017-06-08 23:44:26 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-08 23:44:26 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-08 23:44:26 +0300
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2017-06-08 23:44:26 +0300
+
+
+Started GET "/recipes/6" for 127.0.0.1 at 2017-06-08 23:45:00 +0300
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mRecipe Load (0.3ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mIngredient Load (6.0ms)[0m  SELECT "ingredients".* FROM "ingredients"  WHERE "ingredients"."recipe_id" = ?  [["recipe_id", 6]]
+  [1m[36mDirection Load (1.3ms)[0m  [1mSELECT "directions".* FROM "directions"  WHERE "directions"."recipe_id" = ?[0m  [["recipe_id", 6]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered recipes/show.html.haml within layouts/application (117.2ms)
+Completed 200 OK in 254ms (Views: 237.3ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-08 23:45:00 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-08 23:45:00 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-08 23:45:00 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-08 23:45:00 +0300
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2017-06-08 23:45:00 +0300
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2017-06-08 23:45:00 +0300
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2017-06-08 23:45:00 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-08 23:45:00 +0300
+
+
+Started GET "/recipes/6/edit" for 127.0.0.1 at 2017-06-08 23:45:04 +0300
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mIngredient Load (0.2ms)[0m  [1mSELECT "ingredients".* FROM "ingredients"  WHERE "ingredients"."recipe_id" = ?[0m  [["recipe_id", 6]]
+  Rendered recipes/_ingredient_fields.html.haml (11.2ms)
+  Rendered recipes/_ingredient_fields.html.haml (15.9ms)
+  Rendered recipes/_ingredient_fields.html.haml (6.2ms)
+  Rendered recipes/_ingredient_fields.html.haml (6.4ms)
+  [1m[35mDirection Load (0.2ms)[0m  SELECT "directions".* FROM "directions"  WHERE "directions"."recipe_id" = ?  [["recipe_id", 6]]
+  Rendered recipes/_direction_fields.html.haml (20.6ms)
+  Rendered recipes/_direction_fields.html.haml (6.5ms)
+  Rendered recipes/_direction_fields.html.haml (5.6ms)
+  Rendered recipes/_direction_fields.html.haml (5.2ms)
+  Rendered recipes/_direction_fields.html.haml (14.3ms)
+  Rendered recipes/_form.html.haml (187.5ms)
+  Rendered recipes/edit.html.haml within layouts/application (202.1ms)
+Completed 200 OK in 360ms (Views: 356.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-08 23:45:05 +0300
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2017-06-08 23:45:05 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-08 23:45:05 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-08 23:45:05 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-08 23:45:05 +0300
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2017-06-08 23:45:05 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-08 23:45:05 +0300
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2017-06-08 23:45:05 +0300
+
+
+Started PATCH "/recipes/6" for 127.0.0.1 at 2017-06-08 23:50:07 +0300
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2KiRIflOPke5HKAfXYLqOOVd6fFMSZPyEmvJ6R+tlTY=", "recipe"=>{"title"=>"Пастрома куриная простейшая", "description"=>"Изначально пастрома - мясной деликатес из говядины, блюдо еврейской кухни Молдавии и Румынии. В Новый Свет перекочевало с еврейской иммиграцией начала XX века как pastrami — блюдо евреев — выходцев из Бессарабии и Румынии, а теперь традиционное блюдо нью-йоркской еврейской кухни. В традиционной еврейской и соответственно нью-йоркской кухне приготовляется из говядины; в Румынии часто используется свинина.\r\nНо голь на выдумку хитра, начали и из мяса птицы делать - из индейки, например.\r\nНо индейки под рукой не оказалось, решено было провести эксперимент на банальном курином филе.", "ingredients_attributes"=>{"0"=>{"name"=>"куриная грудка(филе) 500-700 грамм", "_destroy"=>"false", "id"=>"4"}, "1"=>{"name"=>"2 стакана молока", "_destroy"=>"false", "id"=>"5"}, "2"=>{"name"=>"3 чайных ложки соли", "_destroy"=>"false", "id"=>"6"}, "1496954764103"=>{"name"=>"специи любые (исключительно на ваш вкус)", "_destroy"=>"false"}, "1496954764110"=>{"name"=>"1-2 ложки растительного масла", "_destroy"=>"false"}, "1496954764113"=>{"name"=>"какая угодно нить для рулета и духовка", "_destroy"=>"false"}}, "directions_attributes"=>{"0"=>{"step"=>"С грудки снимаем кожу, извлекаем кости, чтобы кусок мяса остался цельным.", "_destroy"=>"false", "id"=>"5"}, "1"=>{"step"=>"В двух стаканах молока размешать три ложки чайных ложки соли без верха и залить этим филе.", "_destroy"=>"false", "id"=>"6"}, "2"=>{"step"=>"Хотя можно использовать и воду, даже добавить туда лавровый лист, но это на любителя.\r\nС водой эксперименты проводил, но на свинине, с молоком, как мне показалось, получается нежнее, при этом вкус молока в мяса не замечен\r\nИ оставить в жидкости мясо часа на.... да на сколько хотите, 3 часов достаточно, у меня простояло часов 5.\r\nЗатем достать, обсушить.", "_destroy"=>"false", "id"=>"7"}, "3"=>{"step"=>"Специи?\r\nА какие специи вы предпочитаете к курице? Я взял набор для курицы - там куркума, красный сладкий и черный перцы, мускатный орех и чего-то еще.\r\nВсе тщательно натер, связал в рулетик \r\nИ затем аккуратно обмазать весь растительным маслом, можно оливковым, можно подсолнечным.", "_destroy"=>"false", "id"=>"8"}, "1496954872708"=>{"step"=>"И рулет отправился в духовку, которая УЖЕ была разогрета на максимум.\r\nЗапекал на решетке, чтобы был доступ ко всему мясу.\r\nНо если нет такой возможности, то фольга и противень вам в помощь. Можно при таком варианте подождать 10 минут. затем перевернуть на другую сторону, тоже на 10 минут.\r\nЕсли же на решетке, то в общей сложности рулет должен находиться 15 минут в духовке на максимальной температуре, но духовки разные бывают, в своей держал 20 минут.\r\nЗатем все выключается, и остается там до остывания, т.е. происходит еще готовка/доготовка на низких температурах.\r\nМожно оставлять на ночь, если готовили с вечера\r\nМожно просто на час-два, как сделал я.\r\nВот что получается в итоге. Мясо довольное сочное, в прямом смысле, не сырое.", "_destroy"=>"false"}, "1496954872711"=>{"step"=>"Замечательно идет на бутерброды, как альтернатива колбасы.\r\nМожно с темным хлебом и любыми соусами/помазками на ваш вкус.\r\nМне гораздо больше понравилось на батоне с каплей майонезами и огурцами.", "_destroy"=>"false"}, "1496954872712"=>{"step"=>"", "_destroy"=>"false"}}}, "commit"=>"Update Recipe", "id"=>"6"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mIngredient Load (0.3ms)[0m  SELECT "ingredients".* FROM "ingredients"  WHERE "ingredients"."recipe_id" = ? AND "ingredients"."id" IN (4, 5, 6)  [["recipe_id", 6]]
+  [1m[36mDirection Load (0.2ms)[0m  [1mSELECT "directions".* FROM "directions"  WHERE "directions"."recipe_id" = ? AND "directions"."id" IN (5, 6, 7, 8)[0m  [["recipe_id", 6]]
+  [1m[35mSQL (0.6ms)[0m  UPDATE "recipes" SET "description" = ?, "title" = ?, "updated_at" = ? WHERE "recipes"."id" = 6  [["description", "Изначально пастрома - мясной деликатес из говядины, блюдо еврейской кухни Молдавии и Румынии. В Новый Свет перекочевало с еврейской иммиграцией начала XX века как pastrami — блюдо евреев — выходцев из Бессарабии и Румынии, а теперь традиционное блюдо нью-йоркской еврейской кухни. В традиционной еврейской и соответственно нью-йоркской кухне приготовляется из говядины; в Румынии часто используется свинина.\r\nНо голь на выдумку хитра, начали и из мяса птицы делать - из индейки, например.\r\nНо индейки под рукой не оказалось, решено было провести эксперимент на банальном курином филе."], ["title", "Пастрома куриная простейшая"], ["updated_at", "2017-06-08 20:50:07.663017"]]
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "ingredients" SET "name" = ?, "updated_at" = ? WHERE "ingredients"."id" = 4[0m  [["name", "куриная грудка(филе) 500-700 грамм"], ["updated_at", "2017-06-08 20:50:07.665402"]]
+  [1m[35mSQL (0.1ms)[0m  UPDATE "ingredients" SET "name" = ?, "updated_at" = ? WHERE "ingredients"."id" = 5  [["name", "2 стакана молока"], ["updated_at", "2017-06-08 20:50:07.666241"]]
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "ingredients" SET "name" = ?, "updated_at" = ? WHERE "ingredients"."id" = 6[0m  [["name", "3 чайных ложки соли"], ["updated_at", "2017-06-08 20:50:07.666877"]]
+  [1m[35mSQL (45.3ms)[0m  INSERT INTO "ingredients" ("created_at", "name", "recipe_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2017-06-08 20:50:07.667556"], ["name", "специи любые (исключительно на ваш вкус)"], ["recipe_id", 6], ["updated_at", "2017-06-08 20:50:07.667556"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "ingredients" ("created_at", "name", "recipe_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2017-06-08 20:50:07.714306"], ["name", "1-2 ложки растительного масла"], ["recipe_id", 6], ["updated_at", "2017-06-08 20:50:07.714306"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "ingredients" ("created_at", "name", "recipe_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2017-06-08 20:50:07.715608"], ["name", "какая угодно нить для рулета и духовка"], ["recipe_id", 6], ["updated_at", "2017-06-08 20:50:07.715608"]]
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE "directions" SET "step" = ?, "updated_at" = ? WHERE "directions"."id" = 5[0m  [["step", "С грудки снимаем кожу, извлекаем кости, чтобы кусок мяса остался цельным."], ["updated_at", "2017-06-08 20:50:07.716668"]]
+  [1m[35mSQL (0.1ms)[0m  UPDATE "directions" SET "step" = ?, "updated_at" = ? WHERE "directions"."id" = 6  [["step", "В двух стаканах молока размешать три ложки чайных ложки соли без верха и залить этим филе."], ["updated_at", "2017-06-08 20:50:07.718446"]]
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "directions" SET "step" = ?, "updated_at" = ? WHERE "directions"."id" = 7[0m  [["step", "Хотя можно использовать и воду, даже добавить туда лавровый лист, но это на любителя.\r\nС водой эксперименты проводил, но на свинине, с молоком, как мне показалось, получается нежнее, при этом вкус молока в мяса не замечен\r\nИ оставить в жидкости мясо часа на.... да на сколько хотите, 3 часов достаточно, у меня простояло часов 5.\r\nЗатем достать, обсушить."], ["updated_at", "2017-06-08 20:50:07.719128"]]
+  [1m[35mSQL (0.1ms)[0m  UPDATE "directions" SET "step" = ?, "updated_at" = ? WHERE "directions"."id" = 8  [["step", "Специи?\r\nА какие специи вы предпочитаете к курице? Я взял набор для курицы - там куркума, красный сладкий и черный перцы, мускатный орех и чего-то еще.\r\nВсе тщательно натер, связал в рулетик \r\nИ затем аккуратно обмазать весь растительным маслом, можно оливковым, можно подсолнечным."], ["updated_at", "2017-06-08 20:50:07.719800"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "directions" ("created_at", "recipe_id", "step", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2017-06-08 20:50:07.720547"], ["recipe_id", 6], ["step", "И рулет отправился в духовку, которая УЖЕ была разогрета на максимум.\r\nЗапекал на решетке, чтобы был доступ ко всему мясу.\r\nНо если нет такой возможности, то фольга и противень вам в помощь. Можно при таком варианте подождать 10 минут. затем перевернуть на другую сторону, тоже на 10 минут.\r\nЕсли же на решетке, то в общей сложности рулет должен находиться 15 минут в духовке на максимальной температуре, но духовки разные бывают, в своей держал 20 минут.\r\nЗатем все выключается, и остается там до остывания, т.е. происходит еще готовка/доготовка на низких температурах.\r\nМожно оставлять на ночь, если готовили с вечера\r\nМожно просто на час-два, как сделал я.\r\nВот что получается в итоге. Мясо довольное сочное, в прямом смысле, не сырое."], ["updated_at", "2017-06-08 20:50:07.720547"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "directions" ("created_at", "recipe_id", "step", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2017-06-08 20:50:07.721559"], ["recipe_id", 6], ["step", "Замечательно идет на бутерброды, как альтернатива колбасы.\r\nМожно с темным хлебом и любыми соусами/помазками на ваш вкус.\r\nМне гораздо больше понравилось на батоне с каплей майонезами и огурцами."], ["updated_at", "2017-06-08 20:50:07.721559"]]
+  [1m[36m (24.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/recipes/6
+Completed 302 Found in 101ms (ActiveRecord: 72.4ms)
+
+
+Started GET "/recipes/6" for 127.0.0.1 at 2017-06-08 23:50:07 +0300
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mRecipe Load (0.1ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mIngredient Load (0.1ms)[0m  SELECT "ingredients".* FROM "ingredients"  WHERE "ingredients"."recipe_id" = ?  [["recipe_id", 6]]
+  [1m[36mDirection Load (0.1ms)[0m  [1mSELECT "directions".* FROM "directions"  WHERE "directions"."recipe_id" = ?[0m  [["recipe_id", 6]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered recipes/show.html.haml within layouts/application (6.6ms)
+Completed 200 OK in 89ms (Views: 87.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-08 23:50:07 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-08 23:50:07 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-08 23:50:07 +0300
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2017-06-08 23:50:07 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-08 23:50:07 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-08 23:50:07 +0300
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2017-06-08 23:50:07 +0300
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2017-06-08 23:50:07 +0300
+
+
+Started GET "/recipes/6/edit" for 127.0.0.1 at 2017-06-08 23:50:12 +0300
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mIngredient Load (0.2ms)[0m  [1mSELECT "ingredients".* FROM "ingredients"  WHERE "ingredients"."recipe_id" = ?[0m  [["recipe_id", 6]]
+  Rendered recipes/_ingredient_fields.html.haml (5.3ms)
+  Rendered recipes/_ingredient_fields.html.haml (5.5ms)
+  Rendered recipes/_ingredient_fields.html.haml (5.6ms)
+  Rendered recipes/_ingredient_fields.html.haml (5.6ms)
+  Rendered recipes/_ingredient_fields.html.haml (7.5ms)
+  Rendered recipes/_ingredient_fields.html.haml (5.0ms)
+  Rendered recipes/_ingredient_fields.html.haml (4.5ms)
+  [1m[35mDirection Load (0.4ms)[0m  SELECT "directions".* FROM "directions"  WHERE "directions"."recipe_id" = ?  [["recipe_id", 6]]
+  Rendered recipes/_direction_fields.html.haml (5.3ms)
+  Rendered recipes/_direction_fields.html.haml (4.9ms)
+  Rendered recipes/_direction_fields.html.haml (6.2ms)
+  Rendered recipes/_direction_fields.html.haml (6.2ms)
+  Rendered recipes/_direction_fields.html.haml (4.8ms)
+  Rendered recipes/_direction_fields.html.haml (5.1ms)
+  Rendered recipes/_direction_fields.html.haml (4.7ms)
+  Rendered recipes/_form.html.haml (141.9ms)
+  Rendered recipes/edit.html.haml within layouts/application (144.8ms)
+Completed 200 OK in 251ms (Views: 247.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-08 23:50:13 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-08 23:50:13 +0300
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2017-06-08 23:50:13 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-08 23:50:13 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-08 23:50:13 +0300
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2017-06-08 23:50:13 +0300
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2017-06-08 23:50:13 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-08 23:50:13 +0300
+
+
+Started PATCH "/recipes/6" for 127.0.0.1 at 2017-06-08 23:50:21 +0300
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2KiRIflOPke5HKAfXYLqOOVd6fFMSZPyEmvJ6R+tlTY=", "recipe"=>{"title"=>"Пастрома куриная простейшая", "description"=>"Изначально пастрома - мясной деликатес из говядины, блюдо еврейской кухни Молдавии и Румынии. В Новый Свет перекочевало с еврейской иммиграцией начала XX века как pastrami — блюдо евреев — выходцев из Бессарабии и Румынии, а теперь традиционное блюдо нью-йоркской еврейской кухни. В традиционной еврейской и соответственно нью-йоркской кухне приготовляется из говядины; в Румынии часто используется свинина.\r\nНо голь на выдумку хитра, начали и из мяса птицы делать - из индейки, например.\r\nНо индейки под рукой не оказалось, решено было провести эксперимент на банальном курином филе.", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f8925b8cf30 @tempfile=#<Tempfile:/var/folders/6_/r1plkz9j1fl5lfmz9lj1t6b40000gn/T/RackMultipart20170608-10870-1ijm22t>, @original_filename="pastorma.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"recipe[image]\"; filename=\"pastorma.jpg\"\r\nContent-Type: image/jpeg\r\n">, "ingredients_attributes"=>{"0"=>{"name"=>"куриная грудка(филе) 500-700 грамм", "_destroy"=>"false", "id"=>"4"}, "1"=>{"name"=>"2 стакана молока", "_destroy"=>"false", "id"=>"5"}, "2"=>{"name"=>"3 чайных ложки соли", "_destroy"=>"false", "id"=>"6"}, "3"=>{"name"=>"специи любые (исключительно на ваш вкус)", "_destroy"=>"false", "id"=>"35"}, "4"=>{"name"=>"1-2 ложки растительного масла", "_destroy"=>"false", "id"=>"36"}, "5"=>{"name"=>"какая угодно нить для рулета и духовка", "_destroy"=>"false", "id"=>"37"}}, "directions_attributes"=>{"0"=>{"step"=>"С грудки снимаем кожу, извлекаем кости, чтобы кусок мяса остался цельным.", "_destroy"=>"false", "id"=>"5"}, "1"=>{"step"=>"В двух стаканах молока размешать три ложки чайных ложки соли без верха и залить этим филе.", "_destroy"=>"false", "id"=>"6"}, "2"=>{"step"=>"Хотя можно использовать и воду, даже добавить туда лавровый лист, но это на любителя.\r\nС водой эксперименты проводил, но на свинине, с молоком, как мне показалось, получается нежнее, при этом вкус молока в мяса не замечен\r\nИ оставить в жидкости мясо часа на.... да на сколько хотите, 3 часов достаточно, у меня простояло часов 5.\r\nЗатем достать, обсушить.", "_destroy"=>"false", "id"=>"7"}, "3"=>{"step"=>"Специи?\r\nА какие специи вы предпочитаете к курице? Я взял набор для курицы - там куркума, красный сладкий и черный перцы, мускатный орех и чего-то еще.\r\nВсе тщательно натер, связал в рулетик \r\nИ затем аккуратно обмазать весь растительным маслом, можно оливковым, можно подсолнечным.", "_destroy"=>"false", "id"=>"8"}, "4"=>{"step"=>"И рулет отправился в духовку, которая УЖЕ была разогрета на максимум.\r\nЗапекал на решетке, чтобы был доступ ко всему мясу.\r\nНо если нет такой возможности, то фольга и противень вам в помощь. Можно при таком варианте подождать 10 минут. затем перевернуть на другую сторону, тоже на 10 минут.\r\nЕсли же на решетке, то в общей сложности рулет должен находиться 15 минут в духовке на максимальной температуре, но духовки разные бывают, в своей держал 20 минут.\r\nЗатем все выключается, и остается там до остывания, т.е. происходит еще готовка/доготовка на низких температурах.\r\nМожно оставлять на ночь, если готовили с вечера\r\nМожно просто на час-два, как сделал я.\r\nВот что получается в итоге. Мясо довольное сочное, в прямом смысле, не сырое.", "_destroy"=>"false", "id"=>"29"}, "5"=>{"step"=>"Замечательно идет на бутерброды, как альтернатива колбасы.\r\nМожно с темным хлебом и любыми соусами/помазками на ваш вкус.\r\nМне гораздо больше понравилось на батоне с каплей майонезами и огурцами.", "_destroy"=>"false", "id"=>"30"}}}, "commit"=>"Update Recipe", "id"=>"6"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1mSELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Command :: file -b --mime '/var/folders/6_/r1plkz9j1fl5lfmz9lj1t6b40000gn/T/acf3da217590dc1066b61f136c1a71e220170608-10870-me9l8p.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/6_/r1plkz9j1fl5lfmz9lj1t6b40000gn/T/acf3da217590dc1066b61f136c1a71e220170608-10870-jnmanp.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/6_/r1plkz9j1fl5lfmz9lj1t6b40000gn/T/acf3da217590dc1066b61f136c1a71e220170608-10870-jnmanp.jpg[0]'
+Command :: convert '/var/folders/6_/r1plkz9j1fl5lfmz9lj1t6b40000gn/T/acf3da217590dc1066b61f136c1a71e220170608-10870-jnmanp.jpg[0]' -auto-orient -resize "x400" -crop "400x400+66+0" +repage '/var/folders/6_/r1plkz9j1fl5lfmz9lj1t6b40000gn/T/acf3da217590dc1066b61f136c1a71e220170608-10870-jnmanp20170608-10870-c7qcyx'
+Command :: file -b --mime '/var/folders/6_/r1plkz9j1fl5lfmz9lj1t6b40000gn/T/acf3da217590dc1066b61f136c1a71e220170608-10870-jnmanp20170608-10870-c7qcyx'
+  [1m[35mIngredient Load (0.4ms)[0m  SELECT "ingredients".* FROM "ingredients"  WHERE "ingredients"."recipe_id" = ? AND "ingredients"."id" IN (4, 5, 6, 35, 36, 37)  [["recipe_id", 6]]
+  [1m[36mDirection Load (0.3ms)[0m  [1mSELECT "directions".* FROM "directions"  WHERE "directions"."recipe_id" = ? AND "directions"."id" IN (5, 6, 7, 8, 29, 30)[0m  [["recipe_id", 6]]
+Command :: file -b --mime '/var/folders/6_/r1plkz9j1fl5lfmz9lj1t6b40000gn/T/acf3da217590dc1066b61f136c1a71e220170608-10870-zog5bz.jpg'
+  [1m[35mSQL (0.5ms)[0m  UPDATE "recipes" SET "image_file_name" = ?, "image_file_size" = ?, "image_updated_at" = ?, "updated_at" = ? WHERE "recipes"."id" = 6  [["image_file_name", "pastorma.jpg"], ["image_file_size", 316665], ["image_updated_at", "2017-06-08 20:50:21.791662"], ["updated_at", "2017-06-08 20:50:22.730687"]]
+[paperclip] deleting /Users/Delta/Rails/recipe_box/public/system/recipes/images/000/000/006/original/recept-prigotovleniya-gusya.jpg
+[paperclip] deleting /Users/Delta/Rails/recipe_box/public/system/recipes/images/000/000/006/medium/recept-prigotovleniya-gusya.jpg
+  [1m[36m (4.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/recipes/6
+Completed 302 Found in 1141ms (ActiveRecord: 5.8ms)
+
+
+Started GET "/recipes/6" for 127.0.0.1 at 2017-06-08 23:50:22 +0300
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mRecipe Load (0.1ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mIngredient Load (0.2ms)[0m  SELECT "ingredients".* FROM "ingredients"  WHERE "ingredients"."recipe_id" = ?  [["recipe_id", 6]]
+  [1m[36mDirection Load (0.1ms)[0m  [1mSELECT "directions".* FROM "directions"  WHERE "directions"."recipe_id" = ?[0m  [["recipe_id", 6]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered recipes/show.html.haml within layouts/application (8.7ms)
+Completed 200 OK in 101ms (Views: 98.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-08 23:50:23 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-08 23:50:23 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-08 23:50:23 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-08 23:50:23 +0300
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2017-06-08 23:50:23 +0300
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2017-06-08 23:50:23 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-08 23:50:23 +0300
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2017-06-08 23:50:23 +0300
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-08 23:50:25 +0300
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (0.3ms)[0m  [1mSELECT "recipes".* FROM "recipes"   ORDER BY created_at DESC[0m
+  Rendered recipes/index.html.haml within layouts/application (14.4ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 122ms (Views: 120.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-08 23:50:26 +0300
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2017-06-08 23:50:26 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-08 23:50:26 +0300
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2017-06-08 23:50:26 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-08 23:50:26 +0300
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2017-06-08 23:50:26 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-08 23:50:26 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-08 23:50:26 +0300
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2017-06-08 23:50:35 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"2KiRIflOPke5HKAfXYLqOOVd6fFMSZPyEmvJ6R+tlTY="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 56ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-08 23:50:36 +0300
+Processing by RecipesController#index as HTML
+  [1m[35mRecipe Load (0.2ms)[0m  SELECT "recipes".* FROM "recipes"   ORDER BY created_at DESC
+  Rendered recipes/index.html.haml within layouts/application (13.0ms)
+Completed 200 OK in 95ms (Views: 93.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-08 23:50:36 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-08 23:50:36 +0300
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2017-06-08 23:50:36 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-08 23:50:36 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-08 23:50:36 +0300
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2017-06-08 23:50:36 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-08 23:50:36 +0300
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2017-06-08 23:50:36 +0300
