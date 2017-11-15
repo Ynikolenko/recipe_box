@@ -17737,3 +17737,288 @@ Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2017-07-12 01:16:54 +0
 
 
 Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-12 01:16:54 +0300
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-06 13:34:07 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RecipesController#index as HTML
+  [1m[35mRecipe Load (12.0ms)[0m  SELECT "recipes".* FROM "recipes"   ORDER BY created_at DESC
+  Rendered recipes/index.html.haml within layouts/application (40.6ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 632ms (Views: 562.7ms | ActiveRecord: 13.8ms)
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2017-10-06 13:34:08 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-10-06 13:34:08 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-10-06 13:34:08 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-10-06 13:34:08 +0300
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2017-10-06 13:34:08 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-10-06 13:34:08 +0300
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2017-10-06 13:34:08 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-10-06 13:34:08 +0300
+
+
+Started GET "/recipes/7" for 127.0.0.1 at 2017-10-06 13:34:17 +0300
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mRecipe Load (0.2ms)[0m  SELECT  "recipes".* FROM "recipes"  WHERE "recipes"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mIngredient Load (11.4ms)[0m  SELECT "ingredients".* FROM "ingredients"  WHERE "ingredients"."recipe_id" = ?  [["recipe_id", 7]]
+  [1m[36mDirection Load (0.9ms)[0m  [1mSELECT "directions".* FROM "directions"  WHERE "directions"."recipe_id" = ?[0m  [["recipe_id", 7]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered recipes/show.html.haml within layouts/application (117.6ms)
+Completed 200 OK in 245ms (Views: 229.2ms | ActiveRecord: 14.0ms)
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2017-10-06 13:34:17 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-10-06 13:34:17 +0300
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-06 13:34:31 +0300
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (0.4ms)[0m  [1mSELECT "recipes".* FROM "recipes"   ORDER BY created_at DESC[0m
+  Rendered recipes/index.html.haml within layouts/application (13.8ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 146ms (Views: 144.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2017-10-06 13:34:31 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-10-06 13:34:31 +0300
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2017-10-06 13:34:31 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-10-06 13:34:41 +0300
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-06 13:34:41 +0300
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (0.4ms)[0m  [1mSELECT "recipes".* FROM "recipes"   ORDER BY created_at DESC[0m
+  Rendered recipes/index.html.haml within layouts/application (27.5ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 167ms (Views: 165.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2017-10-06 13:34:41 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-10-06 13:34:41 +0300
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2017-10-06 13:34:41 +0300
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-06 13:35:09 +0300
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (0.3ms)[0m  [1mSELECT "recipes".* FROM "recipes"   ORDER BY created_at DESC[0m
+  Rendered recipes/index.html.haml within layouts/application (13.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 95ms (Views: 93.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-10-06 13:35:09 +0300
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2017-10-06 13:35:09 +0300
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-06 13:35:30 +0300
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (0.3ms)[0m  [1mSELECT "recipes".* FROM "recipes"   ORDER BY created_at DESC[0m
+  Rendered recipes/index.html.haml within layouts/application (16.4ms)
+Completed 500 Internal Server Error in 170ms
+
+ActionView::Template::Error (undefined local variable or method `br' for #<#<Class:0x007faa64a7ab00>:0x007faa66c4be50>):
+     9: %body
+    10: 	%nav.navbar.navbar-default
+    11: 		.container
+    12: 			.navbar-brand= link_to "Открытая Кухня"<br>"Николенко Юрия", root_path
+    13: 
+    14: 			- if user_signed_in?
+    15: 				%ul.nav.navbar-nav.navbar-right
+  app/views/layouts/application.html.haml:12:in `_app_views_layouts_application_html_haml__964668105269418077_70184922651780'
+
+
+  Rendered /Users/Delta/.rvm/gems/ruby-2.3.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/Delta/.rvm/gems/ruby-2.3.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/Delta/.rvm/gems/ruby-2.3.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (92.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-06 13:35:39 +0300
+Processing by RecipesController#index as HTML
+  [1m[35mRecipe Load (0.3ms)[0m  SELECT "recipes".* FROM "recipes"   ORDER BY created_at DESC
+  Rendered recipes/index.html.haml within layouts/application (13.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 90ms (Views: 89.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-10-06 13:35:39 +0300
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2017-10-06 13:35:39 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-10-06 13:35:39 +0300
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2017-10-06 13:35:39 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-10-06 13:35:39 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-10-06 13:35:39 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-10-06 13:35:39 +0300
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2017-10-06 13:35:39 +0300
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-06 13:35:47 +0300
+Processing by RecipesController#index as HTML
+  [1m[35mRecipe Load (0.3ms)[0m  SELECT "recipes".* FROM "recipes"   ORDER BY created_at DESC
+  Rendered recipes/index.html.haml within layouts/application (12.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 86ms (Views: 84.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-10-06 13:35:47 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-10-06 13:35:47 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-10-06 13:35:47 +0300
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2017-10-06 13:35:47 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-10-06 13:35:47 +0300
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2017-10-06 13:35:47 +0300
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2017-10-06 13:35:47 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-10-06 13:35:47 +0300
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-06 13:35:56 +0300
+Processing by RecipesController#index as HTML
+  [1m[35mRecipe Load (0.3ms)[0m  SELECT "recipes".* FROM "recipes"   ORDER BY created_at DESC
+  Rendered recipes/index.html.haml within layouts/application (12.2ms)
+Completed 500 Internal Server Error in 24ms
+
+SyntaxError (/Users/Delta/Rails/recipe_box/app/views/layouts/application.html.haml:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+...Открытая Кухня "br"Николенко Юрия"...
+...                               ^):
+  app/views/layouts/application.html.haml:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+
+
+  Rendered /Users/Delta/.rvm/gems/ruby-2.3.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/Delta/.rvm/gems/ruby-2.3.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/Delta/.rvm/gems/ruby-2.3.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/Delta/.rvm/gems/ruby-2.3.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (107.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-06 13:36:04 +0300
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (0.3ms)[0m  [1mSELECT "recipes".* FROM "recipes"   ORDER BY created_at DESC[0m
+  Rendered recipes/index.html.haml within layouts/application (11.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 99ms (Views: 97.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2017-10-06 13:36:04 +0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-10-06 13:36:04 +0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-10-06 13:36:04 +0300
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2017-10-06 13:36:04 +0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-10-06 13:36:04 +0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-10-06 13:36:04 +0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-10-06 13:36:04 +0300
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2017-10-06 13:36:04 +0300
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-16 01:23:08 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RecipesController#index as HTML
+  [1m[35mRecipe Load (15.5ms)[0m  SELECT "recipes".* FROM "recipes"   ORDER BY created_at DESC
+  Rendered recipes/index.html.haml within layouts/application (43.2ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 632ms (Views: 565.9ms | ActiveRecord: 17.0ms)
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2017-11-16 01:23:09 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-11-16 01:23:09 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-11-16 01:23:09 +0200
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2017-11-16 01:23:09 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-11-16 01:23:09 +0200
+
+
+Started GET "/assets/recipes.js?body=1" for 127.0.0.1 at 2017-11-16 01:23:09 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-11-16 01:23:09 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-11-16 01:23:09 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-16 01:23:17 +0200
+Processing by RecipesController#index as HTML
+  [1m[35mRecipe Load (0.3ms)[0m  SELECT "recipes".* FROM "recipes"   ORDER BY created_at DESC
+  Rendered recipes/index.html.haml within layouts/application (20.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 105ms (Views: 103.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/recipes.css?body=1" for 127.0.0.1 at 2017-11-16 01:23:17 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-11-16 01:23:17 +0200
